@@ -1,7 +1,7 @@
-import { Button } from "@/app/_components/ui/button";
+import LoginPage from "./login/page";
 
-const Home = () => {
-  return <Button>Click me</Button>;
+const HomePage = () => {
+  return <LoginPage />;
 };
 
-export default Home;
+export default HomePage;
