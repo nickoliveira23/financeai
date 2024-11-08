@@ -1,4 +1,4 @@
-import db from "../_lib/prisma";
+import { db } from "../_lib/prisma";
 import { transactionsColumns } from "./_columns";
 import { DataTable } from "../_components/ui/data-table";
 import AddTransactionButton from "../_components/add-transaction-button";
