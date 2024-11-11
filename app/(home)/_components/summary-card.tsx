@@ -1,5 +1,6 @@
 import AddTransactionButton from "@/app/_components/add-transaction-button";
 import { Card, CardContent, CardHeader } from "@/app/_components/ui/card";
+import { formatCurrency } from "@/app/_utils/currency";
 
 interface SummaryCardProps {
   icon: React.ReactNode;
@@ -28,10 +29,7 @@ const SummaryCard = ({
         <p
           className={`font-bold ${size === "small" ? "text-2xl" : "text-4xl"}`}
         >
-          {Intl.NumberFormat("pt-BR", {
-            style: "currency",
-            currency: "BRL",
-          }).format(amount)}
+          {formatCurrency(amount)}
         </p>
 
         {size === "large" && <AddTransactionButton />}
